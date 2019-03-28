@@ -62,7 +62,7 @@ config.vm.provision "fix-no-tty", type: "shell" do |s|
 	sudo sh -c 'echo "More information https://github.com/UPC/ravada" >> /etc/motd'
 	sudo sh -c 'echo "Two steps to finish:" >> /etc/motd'
 	sudo sh -c 'echo "Create ravada admin user" >> /etc/motd'
-	sudo sh -c 'echo "Execute:   $ sudo ./bin/rvd_back.pl --add-user user.name" >> /etc/motd'
+	sudo sh -c 'echo "Execute:   $ sudo src/ravada/bin/rvd_back.pl --add-user user.name" >> /etc/motd'
 	sudo sh -c 'echo "and" >> /etc/motd'
 	sudo sh -c 'echo "./start_ravada.sh" >> /etc/motd'
 	sudo sh -c 'echo "For shutdown: ./shutdown_ravada.sh" >> /etc/motd'
