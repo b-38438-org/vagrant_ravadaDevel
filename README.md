@@ -11,14 +11,20 @@ If you still do not have vagrant, install in your system:
 sudo apt-get install vagrant
 ```
 
+## First Step
+- Clone this repository
+```
+$ git clone https://github.com/fv3rdugo/vagrant_ravadaDevel.git
+$ cd vagrant_ravadaDevel/
+```
+
 ## Create machine
-This command creates and configures guest machines according to the Vagrantfile
-```bash
-$ cd (into your clone directory)
+```
 $ vagrant up
 ```
+
 ## Access to VM
-Login & password are by default: vagrant / vagrant
+Login & password by default: vagrant / vagrant
 Create an admin account:
 ```
 $ sudo src/ravada/bin/rvd_back.pl --add-user user.name
