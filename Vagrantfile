@@ -1,4 +1,4 @@
-Vagrant.configure(2) do |config|
+  Vagrant.configure(2) do |config|
   config.vm.box = "sjohnsen/ubuntu1804"
   config.vm.network "private_network", ip: "192.168.121.10"
   config.vm.hostname = "ravadaDevel"
@@ -21,7 +21,7 @@ config.vm.provision "fix-no-tty", type: "shell" do |s|
 	sudo apt-get update
 	sudo apt-get install git
 	sudo cp ravada.conf /etc
-	sudo mkdir src
+	mkdir src
 	cd src
 	sudo git clone https://github.com/UPC/ravada.git
 	sudo chown -R vagrant:vagrant ravada
@@ -45,7 +45,8 @@ config.vm.provision "fix-no-tty", type: "shell" do |s|
 	libsys-statistics-linux-perl libio-interface-perl libiptables-chainmgr-perl libnet-dns-perl \
 	wget liblocale-maketext-lexicon-perl libmojolicious-plugin-i18n-perl libdbd-sqlite3-perl \
 	debconf adduser libdigest-sha-perl qemu-kvm libnet-ssh2-perl libfile-rsync-perl \
-	libdate-calc-perl libparallel-forkmanager-perl libproc-pid-file-perl libdbix-connector-perl
+	libdate-calc-perl libparallel-forkmanager-perl libproc-pid-file-perl libdbix-connector-perl \
+	libdatetime-perl
 
 # Create ravada DB and grants
 	sudo mysqladmin processlist -u root -ps3cret create ravada

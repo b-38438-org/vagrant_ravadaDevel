@@ -12,6 +12,7 @@ then
     display_usage
     exit 1
 else
+    cd src/ravada
     SHOW_MESSAGES=$1
     if [ $SHOW_MESSAGES -eq 1 ]
     then
