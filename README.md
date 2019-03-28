@@ -7,5 +7,6 @@ Ravada_devel server with Vagrant + libvirtd
 
 Vagrant by default uses Virtualbox, in our case we use libvirt, and create a KVM machine.
 
-## To up a machine
+## Create machine
+This command creates and configures guest machines according to the Vagrantfile
 $ <code>vagrant up</code>
