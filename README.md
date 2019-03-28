@@ -1,3 +1,7 @@
+# Local requirements
+- KVM & libvirt 
+- vagrant
+
 # Create a Ravada Server for development
 
 Vagrant by default uses Virtualbox, in our case we use libvirt, and create a KVM machine.
@@ -13,6 +17,7 @@ This command creates and configures guest machines according to the Vagrantfile
 $ cd (into your clone directory)
 $ vagrant up
 ```
+## Access to VM
 Login & password are by default: vagrant / vagrant
 Create an admin account:
 ```
@@ -21,3 +26,5 @@ $ ./start_ravada.sh
 
 ```
 Now you must be able to reach ravada at the location http://your.ip:3000/ or http://192.168.121.10:3000
+
+Enjoy!
